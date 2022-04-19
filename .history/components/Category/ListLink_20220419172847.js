@@ -1,0 +1,24 @@
+import Link from "next/link";
+import React from "react";
+
+const ListLink = () => {
+  return (
+    <div className="relative ">
+      <ul className=" bg-red-200 w-full inline-flex justify-between">
+        <li className="p-3">Digital Marketing</li>
+
+        <li>Graphic and Design</li>
+
+        <li>Film Making</li>
+
+        <li>Photography</li>
+
+        <li>Android Development</li>
+
+        <li>Copywriting</li>
+      </ul>
+    </div>
+  );
+};
+
+export default ListLink;
