@@ -1,10 +1,10 @@
 import React from "react";
 import ListLink from "./ListLink";
-const CatList = () => {
+const CatList = ({ allCatLinkData }) => {
   return (
     <div className="relative  bg-red-900">
       <div className="container mx-auto relative">
-        <ListLink />
+        <ListLink data={ allCatLinkData }/>
       </div>
     </div>
   );
