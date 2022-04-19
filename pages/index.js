@@ -2,8 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import CatList from "../components/Category/CatList";
 import { TopNav } from "../components/TopNav/TopNav";
+import { CatLinkData } from '../utils/CatLinkdata';
 
-export default function Home() {
+
+export default function Home({ data }) {
   return (
     <div className="">
       <Head>
@@ -14,8 +16,17 @@ export default function Home() {
 
       <main>
         <TopNav />
-        <CatList />
+        <CatList allCatLinkData={data} />
       </main>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      data: CatLinkData,
+    },
+    revalidate: 4 * 60 * 60,
+  }
 }

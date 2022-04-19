@@ -10,7 +10,7 @@ const NavItems = ({ title, icon, status }) => {
             <a className="relative lg:flex lg:flex-col lg:items-center hover:text-black focus:text-red-400 lg:text-gray-600 lg:text-xs  transition  lg:hover:border-b-2  lg:hover:border-black lg:border-b-white">
               <span className="hover:text-green block lg:p-3  ">
                 {icon}
-                <p className="">{status}</p>
+                {status}
               </span>
               <span className="font-normal hover:scale-105 transition-all">
                 {title}
