@@ -1,0 +1,14 @@
+import Layout from "../components/Layout";
+import "../styles/globals.css";
+Layout
+
+// if (typeof window === "object") {
+//   // mark that the app was server-side rendered
+//   window.__WAS_SSR = true;
+// }
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
