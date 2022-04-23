@@ -60,7 +60,6 @@ export const TopNav = ({ toggle }) => {
 
         {/* NAv right*/}
         {/* end of click to drop condition*/}
-        
       </div>
     </div>
   );
