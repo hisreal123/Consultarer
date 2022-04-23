@@ -13,7 +13,7 @@ import { AccountLinks } from "../AccountLinks";
 // All design are been adjusted to mobile first
 export const TopNav = ({ toggle }) => {
   const IcconStyle = "text-[32px]";
-  const [OpenSideBar, setOpenSideBar] = useState(true);
+  const [openSideBar, setOpenSideBar] = useState(false);
 
   return (
     <div className=" shadow-sm md:screen-full md:bg-red-300">
@@ -27,7 +27,7 @@ export const TopNav = ({ toggle }) => {
               {/* menu avialable only for mobile xs & sm screen size*/}
               <MdMenu
                 className="text-3xl text-gray-600 mr-1 md:hidden"
-                onClick={() => setOpenSideBar(!OpenSideBar)}
+                onClick={() => setOpenSideBar(!openSideBar)}
               />
               <Link href="#">
                 <a className="cursor-pointer">
@@ -51,7 +51,7 @@ export const TopNav = ({ toggle }) => {
           {/* side nav for mobile view only */}
           <Aside
             toggleStyle={`
-            ${!OpenSideBar ? "-translate-x-0" : ""} 
+            ${!openSideBar ? "-translate-x-0" : ""} 
           `}
           />
         </div>

@@ -16,9 +16,9 @@ export const TopNav = ({ toggle }) => {
   const [OpenSideBar, setOpenSideBar] = useState(true);
 
   return (
-    <div className=" shadow-sm md:screen-full md:bg-red-300">
+    <div className=" shadow-sm ">
       {/* content && style medium and tablet screen forward*/}
-      <div className=" relative container mx-auto md:flex ">
+      <div className=" relative container mx-auto ">
         {/* mobile*/}
         {/* Adding pr-2 to make space for te search component*/}
         <div className="mobile relative pl-1 px-2 pb-1 ">
@@ -57,11 +57,9 @@ export const TopNav = ({ toggle }) => {
         </div>
         {/* Search Component */}
 
-        <div className="div hidden  md:flex bg-red-200 overflow-hidden w-full">
-          <Search widthStyle="w-screen ml-4 hover:text-green-400 rounded-full " />
+        <Search widthStyle="w-screen ml-4 hover:text-green-400 rounded-full hidden md:block" />
 
-          <AccountLinks />
-        </div>
+        <AccountLinks />
         {/* NAv right*/}
         {/* end of click to drop condition*/}
       </div>

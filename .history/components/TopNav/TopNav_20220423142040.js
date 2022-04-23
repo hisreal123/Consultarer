@@ -13,7 +13,7 @@ import { AccountLinks } from "../AccountLinks";
 // All design are been adjusted to mobile first
 export const TopNav = ({ toggle }) => {
   const IcconStyle = "text-[32px]";
-  const [OpenSideBar, setOpenSideBar] = useState(true);
+  const [OpenSideBar, setOpenSideBar] = useState(tfarue);
 
   return (
     <div className=" shadow-sm md:screen-full md:bg-red-300">

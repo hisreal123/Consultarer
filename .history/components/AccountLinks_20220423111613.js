@@ -41,7 +41,7 @@ export const AccountLinks = () => {
       {AsideLink.map((item) => (
         <div
           key={item.id}
-          className="flex items-center px-2 py-2 mb-1 hover:bg-red-200 last:mb-0 "
+          className="flex items-center px-2 py-2 mb-1 hover:bg-red-200 last:mb-0 transiion"
         >
           <span className="mr-2 hover:text-red-400">{item.icon}</span>
           <h1 className="text-xs"> {item.title}</h1>

@@ -7,10 +7,7 @@ import { FilterList } from "./FilterList";
 import Logo from "../components/svgs/logo.svg";
 // Repeated Style for more than one Element
 const GenDesc = "text-xs text-red-500  pl-2 py-1";
-
-export const Aside = ({ toggleStyle }) => {
-  const [OpenedAside, setOpenedAside] = useState(false);
-
+sidebarInfo: { openSideBar, setOpenSideBar }
   return (
     <div
       className={` bg-white  absolute top-0  left-0  shadow-lg overflow-hidden w-3/4  transition pb-20 z-50 sm:hidden md:hidden

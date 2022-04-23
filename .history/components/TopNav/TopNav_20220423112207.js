@@ -58,7 +58,7 @@ export const TopNav = ({ toggle }) => {
         {/* Search Component */}
 
         <div className="div hidden  md:flex bg-red-200 overflow-hidden w-full">
-          <Search widthStyle="w-screen ml-4 hover:text-green-400 rounded-full " />
+        <Search widthStyle="w-screen ml-4 hover:text-green-400 rounded-full " />
 
           <AccountLinks />
         </div>

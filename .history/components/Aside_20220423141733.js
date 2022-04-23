@@ -9,7 +9,7 @@ import Logo from "../components/svgs/logo.svg";
 const GenDesc = "text-xs text-red-500  pl-2 py-1";
 
 export const Aside = ({ toggleStyle }) => {
-  const [OpenedAside, setOpenedAside] = useState(false);
+  
 
   return (
     <div

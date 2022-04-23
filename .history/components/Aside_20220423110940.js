@@ -13,7 +13,7 @@ export const Aside = ({ toggleStyle }) => {
 
   return (
     <div
-      className={` bg-white  absolute top-0  left-0  shadow-lg overflow-hidden w-3/4  transition pb-20 z-50 sm:hidden md:hidden
+      className={` bg-white  absolute top-0  left-0  shadow-lg overflow-hidden w-3/4  transition pb-20 z-50 sm:hidden 
       ${OpenedAside ? " " : "-translate-x-full"} ${toggleStyle}
       `}
     >

@@ -8,7 +8,6 @@ import { CatList } from "../Category/CatList";
 
 import Profile from "../svgs/unsplash_x9cXI2eQLBw.svg";
 import Search from "./Search";
-import { AccountLinks } from "../AccountLinks";
 
 // All design are been adjusted to mobile first
 export const TopNav = ({ toggle }) => {
@@ -16,12 +15,11 @@ export const TopNav = ({ toggle }) => {
   const [OpenSideBar, setOpenSideBar] = useState(true);
 
   return (
-    <div className=" shadow-sm md:screen-full md:bg-red-300">
-      {/* content && style medium and tablet screen forward*/}
-      <div className=" relative container mx-auto md:flex ">
+    <div className=" shadow-sm ">
+      <div className=" relative container mx-auto ">
         {/* mobile*/}
         {/* Adding pr-2 to make space for te search component*/}
-        <div className="mobile relative pl-1 px-2 pb-1 ">
+        <div className="mobile relative pl-1 px-2 pb-1 md:h">
           <div className=" relative flex justify-between items-center bg-white w-full ">
             <div className=" relative flex items-center">
               {/* menu avialable only for mobile xs & sm screen size*/}
@@ -37,16 +35,16 @@ export const TopNav = ({ toggle }) => {
             </div>
 
             {/* profile available only for mobile xs & sm screen size*/}
-            <div className="absolute right-0 pr-2 md:hidden">
+            <div className="absolute right-0 pr-2">
               <Profile className="text-3xl " />
               <span className="bg-green-600 h-2 w-2 absolute z-10 bottom-1 right-2  rounded-full "></span>
             </div>
           </div>
           {/* Search avialable only for mobile xs & sm screen size*/}
           <Search
-            widthStyle="w-full pl-2 md:hidden "
+            widthStyle="w-full pl-2  "
             mobileStyle="mb-3 outline-none rounded-full border border-1 "
-            inputStyle=" text-xs py-2 px-2 w-full "
+            inputStyle=" text-xs py-2 px-2 w-full"
           />
           {/* side nav for mobile view only */}
           <Aside
@@ -57,11 +55,8 @@ export const TopNav = ({ toggle }) => {
         </div>
         {/* Search Component */}
 
-        <div className="div hidden  md:flex bg-red-200 overflow-hidden w-full">
-          <Search widthStyle="w-screen ml-4 hover:text-green-400 rounded-full " />
+        <Search widthStyle="w-screen ml-4 hover:text-green-400 rounded-full hidden " />
 
-          <AccountLinks />
-        </div>
         {/* NAv right*/}
         {/* end of click to drop condition*/}
       </div>
